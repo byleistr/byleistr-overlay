@@ -1,0 +1,14 @@
+diff -urN gtkam-0.2.0.orig/src/Makefile.in gtkam-0.2.0/src/Makefile.in
+--- gtkam-0.2.0.orig/src/Makefile.in	2013-10-20 12:47:22.642126473 +0200
++++ gtkam-0.2.0/src/Makefile.in	2013-10-20 12:48:04.812783236 +0200
+@@ -364,6 +364,10 @@
+ 
+ gtkam_LDADD = \
+ 	libgtkam.a	\
++	-lgtk-x11-2.0 \
++	-lgdk_pixbuf-2.0 \
++	-lgobject-2.0 \
++	-lglib-2.0 \
+ 	$(LIBEXIF_LIBS) \
+ 	$(LIBEXIF_GTK_LIBS) \
+ 	$(LIBGPHOTO2_LIBS)	\

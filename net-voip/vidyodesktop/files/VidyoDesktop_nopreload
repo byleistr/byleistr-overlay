@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ ! -d $HOME/.vidyo/VidyoDesktop ]; then
+    mkdir -p $HOME/.vidyo/VidyoDesktop
+fi
+
+OPTION="-Activate"
+cd /opt/vidyo/VidyoDesktop
+
+./VidyoDesktop $OPTION $@

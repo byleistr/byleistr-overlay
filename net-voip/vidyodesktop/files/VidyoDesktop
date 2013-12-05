@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ ! -d $HOME/.vidyo/VidyoDesktop ]; then
+    mkdir -p $HOME/.vidyo/VidyoDesktop
+fi
+
+OPTION="-Activate"
+cd /opt/vidyo/VidyoDesktop
+
+LD_PRELOAD="./totally_ubuntu.so" ./VidyoDesktop $OPTION $@

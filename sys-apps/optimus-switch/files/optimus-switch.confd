@@ -1,0 +1,2 @@
+NVIDIA_XORG_SRC="/etc/optimus-switch/xorg.conf.nvidia"
+NVIDIA_XORG_DST="/etc/X11/xorg.conf.d/nvidia.conf"

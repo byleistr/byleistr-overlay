@@ -1,0 +1,49 @@
+#!/sbin/runscript
+# Copyright 1999-2012 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+depend() {
+	before xdm
+}
+
+NVIDIA_XORG_SRC="${NVIDIA_XORG_SRC:-/etc/optimus-switch/xorg.conf.nvidia}"
+NVIDIA_XORG_DST="${NVIDIA_XORG_DST:-/etc/X11/xorg.conf.d/nvidia.conf}"
+
+
+set_Intel() {
+    if [[ -e "$NVIDIA_XORG_DST" ]]; then
+	einfo "removing nvidia xorg configuration file..."
+	rm -f "$NVIDIA_XORG_DST" || return 1
+    fi
+    OPENGL_DRV="$(eselect opengl show)"
+    if [[ "$OPENGL_DRV" != "xorg-x11" ]]; then
+	eselect opengl set xorg-x11 || return 1
+    fi
+}
+
+set_Nvidia() {
+    CURR_SRC="$(readlink $NVIDIA_XORG_DST)"
+    if [[ "$CURR_SRC" != "$NVIDIA_XORG_SRC" ]]; then
+	einfo "installing nvidia xorg configuration file..."
+	rm -f "$NVIDIA_XORG_DST" || return 1
+	ln -s "$NVIDIA_XORG_SRC" "$NVIDIA_XORG_DST" || return 1
+    fi
+    OPENGL_DRV="$(eselect opengl show)"
+    if [[ "$OPENGL_DRV" != "nvidia" ]];then
+	eselect opengl set nvidia || return 1
+    fi
+}
+
+
+start() {
+	ebegin "Checking optimus configuration..."
+	if lspci | grep -q "VGA compatible controller: Intel"; then
+	    einfo "Intel card found..."
+	    set_Intel
+	else
+	    einfo "No Intel card found, assuming discrete graphics (Nvidia) only..."
+	    set_Nvidia
+	fi
+	eend $?
+}
+
