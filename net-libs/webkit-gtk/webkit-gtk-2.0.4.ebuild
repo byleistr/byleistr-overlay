@@ -172,7 +172,7 @@ src_prepare() {
 
 	# bug #459978, upstream bug #113397
 	epatch "${FILESDIR}/${PN}-1.11.90-gtk-docize-fix.patch"
-	epatch_user
+	epatch "${FILESDIR}/webkit-gtk-2.0.4-freetype.patch"
 	# Prevent maintainer mode from being triggered during make
 	AT_M4DIR=Source/autotools eautoreconf
 }

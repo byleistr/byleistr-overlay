@@ -1,0 +1,15 @@
+diff -urN webkitgtk-2.0.4.orig/Source/WebCore/platform/graphics/harfbuzz/HarfBuzzFaceCairo.cpp webkitgtk-2.0.4/Source/WebCore/platform/graphics/harfbuzz/HarfBuzzFaceCairo.cpp
+--- webkitgtk-2.0.4.orig/Source/WebCore/platform/graphics/harfbuzz/HarfBuzzFaceCairo.cpp	2013-02-12 17:22:45.000000000 +0100
++++ webkitgtk-2.0.4/Source/WebCore/platform/graphics/harfbuzz/HarfBuzzFaceCairo.cpp	2013-12-08 15:02:53.595438647 +0100
+@@ -39,8 +39,9 @@
+ #include "TextEncoding.h"
+ #include <cairo-ft.h>
+ #include <cairo.h>
+-#include <freetype/freetype.h>
+-#include <freetype/tttables.h>
++#include <ft2build.h>
++#include FT_FREETYPE_H
++#include FT_TRUETYPE_TABLES_H
+ #include <hb.h>
+ #include <wtf/text/CString.h>
+ 
