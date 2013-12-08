@@ -43,9 +43,9 @@ python_prepare_all() {
 	# Apply patches before executing sed.
 	local patches=(
 		"${FILESDIR}/imaging-1.1.7-no-xv.patch"
+		"${FILESDIR}/pillow-2.1.0-fterror_include.patch"
 	)
 	epatch "${patches[@]}"
-	epatch_user
 
 	# Disable all the stuff we don't want.
 	local f
