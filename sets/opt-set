@@ -1,0 +1,25 @@
+#omnet++
+dev-tcltk/blt
+sys-cluster/openmpi
+
+#dim <-aliroot
+x11-libs/motif
+
+#data-transport
+dev-libs/xerces-c
+
+#root
+virtual/opengl
+sci-libs/fftw
+sci-libs/gsl
+sci-physics/pythia:6
+sci-physics/pythia:8
+media-gfx/graphviz
+sci-libs/cfitsio
+app-arch/lzma
+dev-libs/libpcre
+dev-lang/python
+
+#aliroot
+#sci-physics/fastjet
+net-libs/cppzmq
