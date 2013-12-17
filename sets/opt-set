@@ -1,6 +1,7 @@
 #omnet++
 dev-tcltk/blt
-sys-cluster/openmpi
+#sys-cluster/openmpi
+virtual/mpi
 
 #dim <-aliroot
 x11-libs/motif
