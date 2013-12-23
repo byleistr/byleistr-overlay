@@ -25,3 +25,4 @@ dev-lang/python
 #aliroot
 #sci-physics/fastjet
 net-libs/cppzmq
+app-doc/doxygen
