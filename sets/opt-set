@@ -8,6 +8,7 @@ x11-libs/motif
 
 #data-transport
 dev-libs/xerces-c
+dev-db/mysql++
 
 #root
 virtual/opengl
