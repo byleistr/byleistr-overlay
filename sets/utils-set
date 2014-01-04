@@ -47,7 +47,7 @@ x11-apps/xdriinfo
 x11-apps/xev
 x11-apps/xrandr
 x11-apps/xvinfo
-x11-drivers/ati-drivers
+#x11-drivers/ati-drivers
 x11-misc/bumblebee
 x11-misc/colord
 x11-misc/driconf
