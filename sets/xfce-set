@@ -13,7 +13,6 @@ x11-misc/slim
 x11-terms/terminator
 x11-terms/xfce4-terminal
 x11-themes/faenza-icon-theme
-x11-themes/faenza-xfce-icon-theme
 x11-themes/gtk-engines-xfce:0
 x11-themes/gtk-engines-xfce:3
 x11-themes/tango-icon-theme
