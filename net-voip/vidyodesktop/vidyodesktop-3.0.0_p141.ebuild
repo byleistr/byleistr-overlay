@@ -2,7 +2,7 @@ EAPI="4"
 
 inherit eutils unpacker
 
-MY_TAG="3_0_0_133"
+MY_TAG="3_0_0_141"
 
 DESCRIPTION="Vidyo Endpoint Application"
 HOMEPAGE="http://www.vidyo.com"
