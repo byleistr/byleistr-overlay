@@ -1,0 +1,12 @@
+diff -urN nx-libs-3.5.0.22.orig/nx-X11/programs/Xserver/Imakefile nx-libs-3.5.0.22/nx-X11/programs/Xserver/Imakefile
+--- nx-libs-3.5.0.22.orig/nx-X11/programs/Xserver/Imakefile	2014-01-04 21:41:35.000000000 +0100
++++ nx-libs-3.5.0.22/nx-X11/programs/Xserver/Imakefile	2014-01-07 21:50:06.320944141 +0100
+@@ -1023,7 +1023,7 @@
+ #else
+ NXAGENTNXLIBS = -L ../../../nxcomp -L ../../../nxcompext -L ../../../nxcompshad \
+                 -lXcomp -lXcompext -lXcompshad -lNX_Xrender -lNX_X11 -lNX_Xext -lNX_Xfixes \
+-                -L../../../nx-X11/exports/lib -lNX_Xtst -lNX_Xdamage -lNX_Xrandr -lNX_Xcomposite -lNX_Xinerama -lNX_Xdmcp \
++                -L../../../nx-X11/exports/lib -lNX_Xtst -lNX_Xdamage -lNX_Xrandr -lNX_Xcomposite -lNX_Xinerama -lNX_Xdmcp -ldl \
+ `pkg-config --libs libxml-2.0`
+ #endif
+ 
