@@ -51,7 +51,7 @@ src_install() {
 	doins ${MY_P}/lib/`arch`/libOpenCL.so*
 
 	dolib ${MY_P}/lib/`arch`/libamdocl64.so
-
+	dobin ${MY_P}/bin/`arch`/clinfo
 }
 
 pkg_postinst() {
