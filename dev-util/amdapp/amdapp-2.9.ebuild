@@ -43,10 +43,11 @@ src_unpack() {
 }
 
 src_install() {
-	doins -r etc
+	insinto /etc/OpenCL/vendors/
+	doins "${FILESDIR}/amdocl64.icd"
+	doins "${FILESDIR}/amdocl32.icd"
 
 	insinto "${AMDAPPDIR}"
-
 	doins -r ${MY_P}/*
 	fperms 755 "${AMDAPPDIR}"/bin/`arch`/clinfo
 
