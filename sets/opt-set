@@ -26,3 +26,4 @@ dev-lang/python
 #sci-physics/fastjet
 net-libs/cppzmq
 app-doc/doxygen
+dev-util/amdapp
