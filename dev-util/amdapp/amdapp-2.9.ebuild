@@ -25,9 +25,10 @@ DEPEND="
 
 RESTRICT="mirror strip"
 
+AMDAPPDIR="/opt/AMDAPP"
 AMD_CL="usr/$(get_libdir)/OpenCL/vendors/amd/"
 
-QA_PREBUILT="${INTEL_CL}*"
+QA_PREBUILT="${AMDAPPDIR}/*"
 S="${WORKDIR}"
 
 pkg_nofetch() {
@@ -44,16 +45,19 @@ src_unpack() {
 src_install() {
 	doins -r etc
 
-	insinto ${AMD_CL}/include
-	doins -r ${MY_P}/include/CL
+	insinto "${AMDAPPDIR}"
 
-	insinto ${AMD_CL}
-	doins ${MY_P}/lib/`arch`/libOpenCL.so*
+	doins -r ${MY_P}/*
+	fperms 755 "${AMDAPPDIR}"/bin/`arch`/clinfo
 
-	dolib ${MY_P}/lib/`arch`/libamdocl64.so
-	dobin ${MY_P}/bin/`arch`/clinfo
+	dosym "${AMDAPPDIR}"/bin/`arch`/clinfo /opt/bin/clinfo
+
+	dosym "${AMDAPPDIR}"/include/CL ${AMD_CL}/include/CL
+	dosym "${AMDAPPDIR}"/lib/`arch`/libOpenCL.so.1 ${AMD_CL}/libOpenCL.so.1
+	dosym libOpenCL.so.1 ${AMD_CL}/libOpenCL.so
+
 }
 
 pkg_postinst() {
-		eselect opencl set --use-old amd
+	eselect opencl set --use-old amd
 }
