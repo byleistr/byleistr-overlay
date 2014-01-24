@@ -9,6 +9,7 @@ media-gfx/ristretto
 media-plugins/gst-plugins-meta:0.10
 media-plugins/gst-plugins-meta:1.0
 sys-block/gparted
+x11-misc/arandr
 x11-misc/slim
 x11-terms/terminator
 x11-terms/xfce4-terminal
