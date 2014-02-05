@@ -4,6 +4,8 @@ if [ ! -d $HOME/.vidyo/VidyoDesktop ]; then
     mkdir -p $HOME/.vidyo/VidyoDesktop
 fi
 
+export PULSE_LATENCY_MSEC=60
+
 OPTION="-Activate"
 cd /opt/vidyo/VidyoDesktop
 
