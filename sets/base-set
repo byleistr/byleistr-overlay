@@ -1,6 +1,7 @@
 app-admin/hddtemp
 app-admin/logrotate
 app-admin/mcelog
+app-admin/metalog
 dev-java/icedtea
 mail-mta/exim
 net-dns/openresolv
