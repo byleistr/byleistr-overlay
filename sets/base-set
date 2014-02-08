@@ -7,6 +7,7 @@ net-dns/openresolv
 net-firewall/iptables
 net-fs/nfs-utils
 net-fs/samba
+net-misc/chrony
 net-misc/dhcpcd
 net-misc/networkmanager
 net-misc/networkmanager-openvpn
