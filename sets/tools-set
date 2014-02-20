@@ -26,6 +26,7 @@ app-editors/vim
 # move app-emacs/gentoo-syntax app-emacs/ebuild-mode
 app-emacs/ebuild-mode
 app-forensics/chkrootkit
+app-misc/mc
 app-misc/screen
 app-portage/eix
 app-portage/elogv
