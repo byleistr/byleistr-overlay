@@ -39,7 +39,7 @@ sys-apps/optimus-switch
 www-client/chromium
 www-client/firefox
 www-plugins/adobe-flash
-www-plugins/chrome-binary-plugins:beta
+www-plugins/chrome-binary-plugins
 www-plugins/gecko-mediaplayer
 x11-apps/mesa-progs
 x11-apps/setxkbmap
