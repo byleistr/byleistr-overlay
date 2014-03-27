@@ -14,7 +14,7 @@ dev-db/mysql++
 virtual/opengl
 sci-libs/fftw
 sci-libs/gsl
-#sci-physics/pythia:6
+sci-physics/pythia:6
 #sci-physics/pythia:8
 media-gfx/graphviz
 sci-libs/cfitsio
