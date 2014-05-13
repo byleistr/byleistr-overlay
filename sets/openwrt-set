@@ -36,4 +36,4 @@ sys-devel/dev86
 app-arch/sharutils
 dev-java/icedtea
 net-wireless/b43-fwcutter
-
+dev-util/quilt
