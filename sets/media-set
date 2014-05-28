@@ -27,12 +27,16 @@ media-sound/paprefs
 media-sound/pavucontrol
 media-sound/pavumeter
 media-sound/vorbis-tools
-media-sound/xmms2
+media-tv/dvbtune
 media-tv/linuxtv-dvb-apps
+media-tv/tvheadend
+media-tv/w_scan
 media-video/avidemux
 media-video/cinelerra
+media-video/dvbsnoop
 media-video/flvstreamer
 media-video/guvcview
+media-video/kaffeine
 #media-video/kdenlive
 media-video/lsdvd
 media-video/mplayer

@@ -30,3 +30,7 @@ media-libs/ftgl
 net-libs/cppzmq
 app-doc/doxygen
 dev-util/amdapp
+
+#ecs-gui
+dev-python/autobahn
+dev-python/twisted-web

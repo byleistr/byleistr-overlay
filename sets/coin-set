@@ -1,5 +1,9 @@
 net-p2p/armory
 net-p2p/bitcoind
+#required by armory
+net-p2p/bittornado
+
+
 #net-p2p/litecoin-qt
 #net-p2p/litecoind
 dev-libs/jansson
