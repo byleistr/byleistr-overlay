@@ -35,7 +35,6 @@ net-misc/x2goclient
 net-voip/ekiga
 net-voip/linphone
 net-voip/vidyodesktop
-sys-apps/optimus-switch
 www-client/chromium
 www-client/firefox
 www-plugins/adobe-flash
