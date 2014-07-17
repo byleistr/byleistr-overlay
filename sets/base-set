@@ -31,6 +31,8 @@ sys-apps/usbutils
 sys-auth/nss-mdns
 sys-boot/grub:2
 sys-devel/clang
+sys-devel/gcc:4.7
+sys-devel/gcc:4.8
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-power/acpid
