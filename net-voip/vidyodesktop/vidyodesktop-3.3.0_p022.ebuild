@@ -59,16 +59,17 @@ src_install() {
 	exeinto /opt/vidyo/VidyoDesktop
 	doexe opt/vidyo/VidyoDesktop/VidyoDesktop || die
 
+	doicon usr/share/pixmaps/vidyo_icon.png || die
+
 	insinto /opt/vidyo/VidyoDesktop
 	#ubuntu hack not needed anymore
 	#doins totally_ubuntu.so || die
 	#doins ${FILESDIR}/ubuntu-lsb-release || die
-	doins usr/share/pixmaps/vidyo_icon.png || die
 
 	doins -r opt/vidyo/VidyoDesktop/resources
 
 	exeinto /opt/bin
 	newexe ${FILESDIR}/VidyoDesktop_nopreload VidyoDesktop || die
 
-	make_desktop_entry VidyoDesktop VidyoDesktop /opt/vidyo/VidyoDesktop/vidyo_icon.png
+	make_desktop_entry VidyoDesktop VidyoDesktop vidyo_icon
 }
