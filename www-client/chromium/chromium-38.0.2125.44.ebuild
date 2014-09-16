@@ -257,6 +257,7 @@ src_prepare() {
 		'third_party/usrsctp' \
 		'third_party/webdriver' \
 		'third_party/webrtc' \
+		'third_party/widevine' \
 		'third_party/x86inc' \
 		'third_party/zlib/google' \
 		'url/third_party/mozilla' \
@@ -269,6 +270,7 @@ src_prepare() {
 src_configure() {
 	local myconf=""
 
+	myconf+=" -Denable_pepper_cdms=1"
 	# Never tell the build system to "enable" SSE2, it has a few unexpected
 	# additions, bug #336871.
 	myconf+=" -Ddisable_sse2=1"
