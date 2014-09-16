@@ -1,0 +1,12 @@
+diff -urN chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm.gyp chromium-38.0.2125.44/third_party/widevine/cdm/widevine_cdm.gyp
+--- chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm.gyp       2014-09-04 02:04:19.000000000 +0200
++++ chromium-38.0.2125.44/third_party/widevine/cdm/widevine_cdm.gyp	       2014-09-17 00:46:29.085427469 +0200
+@@ -54,7 +54,7 @@
+       'target_name': 'widevinecdmadapter',
+       'type': 'none',
+       'conditions': [
+-        [ 'branding == "Chrome" and enable_pepper_cdms==1', {
++        [ 'enable_pepper_cdms==1', {
+           'dependencies': [
+             '<(DEPTH)/ppapi/ppapi.gyp:ppapi_cpp',
+             '<(DEPTH)/media/media_cdm_adapter.gyp:cdmadapter',
