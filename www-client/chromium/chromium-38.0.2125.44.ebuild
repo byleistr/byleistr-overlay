@@ -176,7 +176,7 @@ src_prepare() {
 
 	epatch "${FILESDIR}/${PN}-gcc-4.7-r0.patch"
 	epatch "${FILESDIR}/${PN}-system-jinja-r6.patch"
-	#epatch "${FILESDIR}/widevine.patch"
+	epatch "${FILESDIR}/widevine.patch"
 
 	epatch_user
 
@@ -557,6 +557,7 @@ src_install() {
 
 	doexe out/Release/libffmpegsumo.so || die
 	doexe out/Release/libpdf.so || die
+	doexe out/Release/libwidevinecdmadapter.so || die
 
 	# Install icons and desktop entry.
 	local branding size
