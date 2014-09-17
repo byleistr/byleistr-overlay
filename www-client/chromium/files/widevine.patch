@@ -1,0 +1,99 @@
+diff -urN chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm.gyp chromium-38.0.2125.44/third_party/widevine/cdm/widevine_cdm.gyp
+--- chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm.gyp	2014-09-04 02:04:19.000000000 +0200
++++ chromium-38.0.2125.44/third_party/widevine/cdm/widevine_cdm.gyp	2014-09-17 09:34:25.853330514 +0200
+@@ -7,35 +7,30 @@
+     'widevine_cdm_version_h_file%': 'widevine_cdm_version.h',
+     'widevine_cdm_binary_files%': [],
+     'conditions': [
+-      [ 'branding == "Chrome"', {
++      [ 'OS == "linux"', {
+         'conditions': [
+           [ 'chromeos == 1', {
+             'widevine_cdm_version_h_file%':
+                 'chromeos/<(target_arch)/widevine_cdm_version.h',
+             'widevine_cdm_binary_files%': [
+-              'chromeos/<(target_arch)/libwidevinecdm.so',
+             ],
+           }],
+           [ 'OS == "linux" and chromeos == 0', {
+             'widevine_cdm_version_h_file%':
+                 'linux/<(target_arch)/widevine_cdm_version.h',
+             'widevine_cdm_binary_files%': [
+-              'linux/<(target_arch)/libwidevinecdm.so',
+             ],
+           }],
+           [ 'OS == "mac"', {
+             'widevine_cdm_version_h_file%':
+                 'mac/<(target_arch)/widevine_cdm_version.h',
+             'widevine_cdm_binary_files%': [
+-              'mac/<(target_arch)/libwidevinecdm.dylib',
+             ],
+           }],
+           [ 'OS == "win"', {
+             'widevine_cdm_version_h_file%':
+                 'win/<(target_arch)/widevine_cdm_version.h',
+             'widevine_cdm_binary_files%': [
+-              'win/<(target_arch)/widevinecdm.dll',
+-              'win/<(target_arch)/widevinecdm.dll.lib',
+             ],
+           }],
+         ],
+@@ -54,32 +49,11 @@
+       'target_name': 'widevinecdmadapter',
+       'type': 'none',
+       'conditions': [
+-        [ 'branding == "Chrome" and enable_pepper_cdms==1', {
++        [ 'enable_pepper_cdms==1', {
+           'dependencies': [
+             '<(DEPTH)/ppapi/ppapi.gyp:ppapi_cpp',
+             '<(DEPTH)/media/media_cdm_adapter.gyp:cdmadapter',
+             'widevine_cdm_version_h',
+-            'widevine_cdm_binaries',
+-          ],
+-          'conditions': [
+-            [ 'os_posix == 1 and OS != "mac"', {
+-              'libraries': [
+-                # Copied by widevine_cdm_binaries.
+-                '<(PRODUCT_DIR)/libwidevinecdm.so',
+-              ],
+-            }],
+-            [ 'OS == "win"', {
+-              'libraries': [
+-                # Copied by widevine_cdm_binaries.
+-                '<(PRODUCT_DIR)/widevinecdm.dll.lib',
+-              ],
+-            }],
+-            [ 'OS == "mac"', {
+-              'libraries': [
+-                # Copied by widevine_cdm_binaries.
+-                '<(PRODUCT_DIR)/libwidevinecdm.dylib',
+-              ],
+-            }],
+           ],
+         }],
+       ],
+@@ -94,24 +68,6 @@
+       }],
+     },
+     {
+-      # GN version: //third_party/widevine/cdm:binaries
+-      'target_name': 'widevine_cdm_binaries',
+-      'type': 'none',
+-      'conditions': [
+-        [ 'OS=="mac"', {
+-          'xcode_settings': {
+-            'COPY_PHASE_STRIP': 'NO',
+-          }
+-        }],
+-      ],
+-      'copies': [{
+-        # TODO(ddorwin): Do we need a sub-directory? We either need a
+-        # sub-directory or to rename manifest.json before we can copy it.
+-        'destination': '<(PRODUCT_DIR)',
+-        'files': [ '<@(widevine_cdm_binary_files)' ],
+-      }],
+-    },
+-    {
+       'target_name': 'widevine_test_license_server',
+       'type': 'none',
+       'conditions': [
