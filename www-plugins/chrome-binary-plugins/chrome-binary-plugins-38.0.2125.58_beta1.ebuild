@@ -76,7 +76,7 @@ src_install() {
 
 	insinto /usr/$(get_libdir)/chromium-browser/
 
-	doins libwidevinecdm*
+	doins libwidevinecdm.so
 
 	if use flash; then
 		doins -r PepperFlash
