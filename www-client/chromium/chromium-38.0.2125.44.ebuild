@@ -176,7 +176,7 @@ src_prepare() {
 
 	epatch "${FILESDIR}/${PN}-gcc-4.7-r0.patch"
 	epatch "${FILESDIR}/${PN}-system-jinja-r6.patch"
-	epatch "${FILESDIR}/widevine.patch"
+	#epatch "${FILESDIR}/widevine.patch"
 
 	epatch_user
 
