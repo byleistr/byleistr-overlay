@@ -69,6 +69,6 @@ diff -urN chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm_versi
  
 +#include "third_party/widevine/cdm/widevine_cdm_common.h"
 +#define WIDEVINE_CDM_AVAILABLE 1
-+#define WIDEVINE_CDM_VERSION_STRING 1.4.6.667
++#define WIDEVINE_CDM_VERSION_STRING "1.4.6.667"
 +
  #endif  // WIDEVINE_CDM_VERSION_H_
