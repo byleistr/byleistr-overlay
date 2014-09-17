@@ -60,3 +60,15 @@ diff -urN chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm.gyp c
        'target_name': 'widevine_test_license_server',
        'type': 'none',
        'conditions': [
+diff -urN chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm_version.h chromium-38.0.2125.44/third_party/widevine/cdm/widevine_cdm_version.h
+--- chromium-38.0.2125.44.orig/third_party/widevine/cdm/widevine_cdm_version.h	2014-09-04 02:04:19.000000000 +0200
++++ chromium-38.0.2125.44/third_party/widevine/cdm/widevine_cdm_version.h	2014-09-17 11:11:44.643154814 +0200
+@@ -14,4 +14,8 @@
+ //  - WIDEVINE_CDM_VERSION_STRING (with the version of the CDM that's available
+ //    as a string, e.g., "1.0.123.456").
+ 
++#include "widevine_cdm_common.h"
++#define WIDEVINE_CDM_AVAILABLE 1
++#define WIDEVINE_CDM_VERSION_STRING 1.4.6.667
++
+ #endif  // WIDEVINE_CDM_VERSION_H_
