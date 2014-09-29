@@ -25,6 +25,7 @@ dev-util/intel-ocl-sdk
 dev-util/nvidia-cuda-toolkit
 gnome-base/libgnomeui
 kde-base/kcachegrind:4
+media-sound/spotify
 net-im/skype
 net-misc/dropbox
 net-misc/dropbox-cli
@@ -38,6 +39,7 @@ net-voip/linphone
 net-voip/vidyodesktop
 www-client/chromium
 www-client/firefox
+www-client/google-chrome-beta
 www-plugins/adobe-flash
 www-plugins/chrome-binary-plugins
 www-plugins/gecko-mediaplayer
