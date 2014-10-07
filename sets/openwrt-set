@@ -34,6 +34,6 @@ dev-libs/libusb-compat
 sys-devel/bin86
 sys-devel/dev86
 app-arch/sharutils
-dev-java/icedtea
+dev-java/icedtea-bin
 net-wireless/b43-fwcutter
 dev-util/quilt

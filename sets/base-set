@@ -2,7 +2,7 @@ app-admin/hddtemp
 app-admin/logrotate
 app-admin/mcelog
 app-admin/metalog
-dev-java/icedtea
+dev-java/icedtea-bin
 mail-mta/exim
 net-dns/openresolv
 net-firewall/iptables

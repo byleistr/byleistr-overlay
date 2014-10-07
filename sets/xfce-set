@@ -1,6 +1,7 @@
 app-cdr/xfburn
 app-editors/gedit
 app-editors/gvim
+app-misc/solaar
 app-text/evince
 app-text/qpdfview
 gnome-extra/gcalctool
@@ -8,6 +9,7 @@ gnome-extra/nm-applet
 media-gfx/ristretto
 media-plugins/gst-plugins-meta:0.10
 media-plugins/gst-plugins-meta:1.0
+net-wireless/blueman
 sys-block/gparted
 x11-misc/arandr
 x11-misc/slim
