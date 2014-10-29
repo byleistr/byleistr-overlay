@@ -4,6 +4,7 @@ app-admin/mcelog
 app-admin/metalog
 dev-java/icedtea-bin
 mail-mta/exim
+net-dns/dnssec-root
 net-dns/openresolv
 net-firewall/iptables
 net-fs/nfs-utils
