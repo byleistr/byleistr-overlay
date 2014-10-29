@@ -47,6 +47,5 @@ media-video/transcode
 media-video/vlc
 media-video/x264-encoder
 net-print/foomatic-db-ppds
-net-print/foomatic-filters-ppds
 net-print/gutenprint
 net-print/hplip
