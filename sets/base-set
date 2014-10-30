@@ -23,6 +23,7 @@ net-print/cups
 net-proxy/dante
 net-proxy/torsocks
 net-proxy/tsocks
+sys-apps/lm_sensors
 sys-apps/lsb-release
 sys-apps/memtest86+
 sys-apps/microcode-ctl
