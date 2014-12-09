@@ -56,7 +56,6 @@ x11-misc/driconf
 x11-misc/vdpauinfo
 x11-misc/x11vnc
 x11-plugins/gkrellm-bluez
-x11-plugins/gkrellm-cpufreq
 x11-plugins/gkrellm-volume
 x11-plugins/gkrellmwireless
 x11-plugins/gkrelltop
