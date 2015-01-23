@@ -38,7 +38,7 @@ net-voip/linphone
 net-voip/vidyodesktop
 www-client/chromium
 www-client/firefox
-www-client/google-chrome-beta
+www-client/google-chrome
 www-plugins/adobe-flash
 www-plugins/chrome-binary-plugins
 www-plugins/gecko-mediaplayer
