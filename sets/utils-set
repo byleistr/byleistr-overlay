@@ -36,11 +36,9 @@ net-p2p/qbittorrent
 net-voip/ekiga
 net-voip/linphone
 net-voip/vidyodesktop
-www-client/chromium
 www-client/firefox
 www-client/google-chrome-beta
 www-plugins/adobe-flash
-www-plugins/chrome-binary-plugins
 www-plugins/gecko-mediaplayer
 x11-apps/mesa-progs
 x11-apps/setxkbmap
