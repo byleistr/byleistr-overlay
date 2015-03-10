@@ -20,7 +20,6 @@ media-gfx/graphviz
 sci-libs/cfitsio
 app-arch/lzma
 dev-libs/libpcre
-dev-lang/python
 media-libs/libafterimage
 media-libs/ftgl
 

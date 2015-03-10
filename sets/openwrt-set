@@ -19,7 +19,6 @@ sys-libs/ncurses
 dev-libs/openssl
 sys-devel/patch
 virtual/perl-ExtUtils-MakeMaker
-dev-lang/python
 net-misc/rsync
 dev-lang/ruby
 dev-embedded/sdcc
