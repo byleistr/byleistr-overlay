@@ -25,6 +25,7 @@ dev-util/nvidia-cuda-toolkit
 gnome-base/libgnomeui
 kde-base/kcachegrind:4
 media-sound/spotify
+net-im/pidgin
 net-im/skype
 net-misc/dropbox
 net-misc/dropbox-cli
@@ -56,6 +57,10 @@ x11-plugins/gkrellm-bluez
 x11-plugins/gkrellm-volume
 x11-plugins/gkrellmwireless
 x11-plugins/gkrelltop
+x11-plugins/pidgin-encryption
+x11-plugins/pidgin-gpg
+x11-plugins/pidgin-libnotify
+x11-plugins/pidgin-otr
 x11-terms/xterm
 x11-themes/gkrellm-themes
 x11-wm/fluxbox
