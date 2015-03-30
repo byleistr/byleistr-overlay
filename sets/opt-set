@@ -28,7 +28,6 @@ media-libs/ftgl
 #sci-physics/fastjet
 net-libs/cppzmq
 app-doc/doxygen
-dev-util/amdapp
 
 #ecs-gui
 dev-python/autobahn
