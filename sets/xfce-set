@@ -8,8 +8,8 @@ media-gfx/ristretto
 media-plugins/gst-plugins-meta:0.10
 media-plugins/gst-plugins-meta:1.0
 net-wireless/blueman
-sys-block/gparted
 sci-calculators/galculator
+sys-block/gparted
 x11-misc/arandr
 x11-misc/slim
 x11-terms/terminator
@@ -28,7 +28,9 @@ x11-themes/xfce-gant-icon-theme
 x11-themes/zukitwo
 xfce-base/xfce4-meta
 xfce-extra/thunar-archive-plugin
+xfce-extra/thunar-media-tags-plugin
 xfce-extra/thunar-shares-plugin
+xfce-extra/thunar-vcs-plugin
 xfce-extra/thunar-volman
 xfce-extra/tumbler
 xfce-extra/xfce4-battery-plugin
@@ -37,12 +39,7 @@ xfce-extra/xfce4-datetime-plugin
 xfce-extra/xfce4-mixer
 xfce-extra/xfce4-notifyd
 xfce-extra/xfce4-power-manager
-xfce-extra/xfce4-screenshooter
-xfce-extra/thunar-archive-plugin
-xfce-extra/thunar-media-tags-plugin
-xfce-extra/thunar-shares-plugin
-xfce-extra/thunar-vcs-plugin
-xfce-extra/thunar-volman
 xfce-extra/xfce4-pulseaudio-plugin
+xfce-extra/xfce4-screenshooter
 xfce-extra/xfce4-volumed-pulse
 xfce-extra/xfce4-wavelan-plugin
