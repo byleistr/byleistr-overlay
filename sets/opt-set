@@ -32,3 +32,4 @@ app-doc/doxygen
 #ecs-gui
 dev-python/autobahn
 dev-python/twisted-web
+dev-libs/xmlrpc-c
