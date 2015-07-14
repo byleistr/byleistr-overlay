@@ -7,7 +7,7 @@ app-emulation/virt-manager
 app-emulation/wine
 app-emulation/winetricks
 app-mobilephone/obexftp
-app-office/libreoffice
+app-office/libreoffice-bin
 app-office/scribus
 app-office/texstudio
 dev-python/virtualenv
