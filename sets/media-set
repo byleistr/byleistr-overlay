@@ -1,4 +1,5 @@
 app-cdr/acetoneiso
+media-gfx/darktable
 media-gfx/gimp
 media-gfx/gphoto2
 media-gfx/gtkam
@@ -39,6 +40,7 @@ media-video/kaffeine
 #media-video/kdenlive
 media-video/lsdvd
 media-video/mplayer
+media-video/openshot
 media-video/qt-recordmydesktop
 media-video/smplayer
 media-video/sub2srt
