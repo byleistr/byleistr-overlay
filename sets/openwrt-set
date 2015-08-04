@@ -20,7 +20,6 @@ dev-libs/openssl
 sys-devel/patch
 virtual/perl-ExtUtils-MakeMaker
 net-misc/rsync
-dev-lang/ruby
 dev-embedded/sdcc
 app-arch/unzip
 net-misc/wget
