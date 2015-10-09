@@ -93,7 +93,7 @@ net-wireless/wavemon
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 sci-visualization/gnuplot
-sys-apps/cv
+sys-apps/progress
 sys-apps/dmidecode
 sys-apps/dstat
 sys-apps/edac-utils
