@@ -23,7 +23,7 @@ dev-util/ccache
 dev-util/intel-ocl-sdk
 dev-util/nvidia-cuda-toolkit
 gnome-base/libgnomeui
-kde-apps/kcachegrind:4
+dev-util/qcachegrind
 media-sound/spotify
 net-im/pidgin
 net-im/skype
