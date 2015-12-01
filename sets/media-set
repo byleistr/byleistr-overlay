@@ -1,4 +1,4 @@
-app-cdr/acetoneiso
+#app-cdr/acetoneiso
 media-gfx/darktable
 media-gfx/gimp
 media-gfx/gphoto2
@@ -37,7 +37,7 @@ media-video/cinelerra
 media-video/dvbsnoop
 media-video/flvstreamer
 media-video/guvcview
-media-video/kaffeine
+#media-video/kaffeine
 #media-video/kdenlive
 media-video/lsdvd
 media-video/mplayer
