@@ -1,7 +1,7 @@
 app-admin/gkrellm
 app-admin/keepass
 app-crypt/seahorse
-app-crypt/truecrypt
+#app-crypt/truecrypt
 app-emulation/virt-manager
 #app-emulation/vmware-player
 app-emulation/wine

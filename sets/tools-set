@@ -71,7 +71,6 @@ net-dialup/ppp
 net-dialup/pppconfig
 net-dialup/rp-pppoe
 net-dns/bind-tools
-net-dns/host
 net-ftp/ftp
 net-ftp/ncftp
 net-ftp/tftp-hpa
