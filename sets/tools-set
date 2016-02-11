@@ -42,6 +42,7 @@ app-text/dos2unix
 app-vim/gentoo-syntax
 app-vim/vim-spell-en
 dev-lang/go
+dev-python/maybe
 dev-util/debugedit
 dev-util/strace
 dev-util/valgrind
