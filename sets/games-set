@@ -1,3 +1,5 @@
 games-emulation/dosbox
 games-engines/scummvm
 games-util/steam-meta
+games-arcade/supertux
+app-emulation/playonlinux
