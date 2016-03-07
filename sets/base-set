@@ -31,7 +31,6 @@ sys-apps/microcode-ctl
 sys-apps/microcode-data
 sys-apps/pcmciautils
 sys-apps/usbutils
-sys-auth/nss-mdns
 sys-boot/grub:2
 sys-devel/clang
 sys-devel/gcc:4.9
