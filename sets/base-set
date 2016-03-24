@@ -33,7 +33,6 @@ sys-apps/pcmciautils
 sys-apps/usbutils
 sys-boot/grub:2
 sys-devel/clang
-sys-devel/gcc:4.9
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-power/acpid
