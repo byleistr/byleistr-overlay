@@ -122,7 +122,6 @@ sys-fs/inotify-tools
 sys-fs/lsscsi
 sys-fs/mdadm
 sys-fs/ntfs3g
-sys-fs/obexfs
 sys-fs/reiserfsprogs
 sys-power/powertop
 sys-process/atop
