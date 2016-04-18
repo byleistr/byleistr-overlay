@@ -12,8 +12,10 @@ net-fs/samba
 net-misc/chrony
 net-misc/dhcpcd
 net-misc/networkmanager
+net-misc/networkmanager-l2tp
 net-misc/networkmanager-openconnect
 net-misc/networkmanager-openvpn
+net-misc/networkmanager-openswan
 net-misc/networkmanager-pptp
 net-misc/networkmanager-vpnc
 net-misc/ntp
