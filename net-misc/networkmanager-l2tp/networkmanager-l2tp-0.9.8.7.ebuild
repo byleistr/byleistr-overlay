@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit autotools
+inherit autotools eutils
 
 MY_PN="NetworkManager-l2tp"
 
@@ -34,6 +34,7 @@ DEPEND="${RDEPEND}
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_prepare() {
+	epatch "${FILESDIR}"/NM_L2TP_KEY_IPSEC_GATEWAY_ID.patch
 	eautoreconf
 }
 
