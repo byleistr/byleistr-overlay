@@ -1,6 +1,6 @@
 diff -urN NetworkManager-l2tp-0.9.8.7/src/nm-l2tp-service.c NetworkManager-l2tp-0.9.8.7.new/src/nm-l2tp-service.c
 --- NetworkManager-l2tp-0.9.8.7/src/nm-l2tp-service.c	2014-07-25 21:19:36.000000000 +0200
-+++ NetworkManager-l2tp-0.9.8.7.new/src/nm-l2tp-service.c	2016-04-19 16:40:09.017374172 +0200
++++ NetworkManager-l2tp-0.9.8.7.new/src/nm-l2tp-service.c	2016-04-19 16:51:07.420616119 +0200
 @@ -948,7 +948,7 @@
  	fprintf(fp, "%s%s ",value?"@":"", value?value:"%any");
  
@@ -10,3 +10,12 @@ diff -urN NetworkManager-l2tp-0.9.8.7/src/nm-l2tp-service.c NetworkManager-l2tp-
  
  	value = nm_setting_vpn_get_data_item (s_vpn, NM_L2TP_KEY_IPSEC_PSK);
  	if(!value)value="";
+@@ -1161,7 +1161,7 @@
+ 	/* value = nm_setting_vpn_get_data_item (s_vpn, NM_L2TP_KEY_GATEWAY); */
+ 	write_config_option (ipsec_fd, "  right=%s\n", priv->saddr);
+ 	value = nm_setting_vpn_get_data_item (s_vpn, NM_L2TP_KEY_IPSEC_GATEWAY_ID);
+-	if(value)write_config_option (ipsec_fd, "  rightid=@%s\n", value);
++	if(value)write_config_option (ipsec_fd, "  rightid=%s\n", value);
+ 	write_config_option (ipsec_fd,
+ "  esp=3des-sha1\n"
+ "  keyexchange=ike\n"
