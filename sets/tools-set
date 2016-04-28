@@ -110,6 +110,7 @@ sys-apps/x86info
 sys-auth/thinkfinger
 sys-boot/syslinux
 sys-boot/unetbootin
+sys-devel/crossdev
 sys-devel/distcc
 sys-devel/gdb
 sys-fs/cryptsetup
