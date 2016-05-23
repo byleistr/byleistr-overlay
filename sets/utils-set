@@ -41,6 +41,7 @@ net-voip/linphone
 net-voip/vidyodesktop
 www-client/firefox
 www-client/google-chrome-beta
+www-client/google-chrome-unstable
 www-plugins/adobe-flash
 www-plugins/gecko-mediaplayer
 x11-apps/mesa-progs

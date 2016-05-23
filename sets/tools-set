@@ -26,6 +26,7 @@ app-editors/vim
 # move app-emacs/gentoo-syntax app-emacs/ebuild-mode
 app-emacs/ebuild-mode
 app-forensics/chkrootkit
+app-misc/jq
 app-misc/mc
 app-misc/screen
 app-portage/eix
@@ -36,9 +37,11 @@ app-portage/gentoolkit
 app-portage/layman
 app-portage/mirrorselect
 app-portage/portage-utils
+app-portage/repoman
 app-shells/bash-completion
 app-shells/gentoo-bashcomp
 app-text/dos2unix
+app-text/lesspipe
 app-vim/gentoo-syntax
 app-vim/vim-spell-en
 dev-lang/go
@@ -70,7 +73,9 @@ net-analyzer/wireshark
 net-dialup/minicom
 net-dialup/ppp
 net-dialup/pppconfig
+net-dialup/rp-l2tp
 net-dialup/rp-pppoe
+net-dialup/xl2tpd
 net-dns/bind-tools
 net-ftp/ftp
 net-ftp/ncftp
