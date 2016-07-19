@@ -30,7 +30,7 @@ sys-apps/lm_sensors
 sys-apps/lsb-release
 sys-apps/memtest86+
 sys-apps/microcode-ctl
-sys-apps/microcode-data
+sys-firmware/intel-microcode
 sys-apps/pcmciautils
 sys-apps/usbutils
 sys-boot/grub:2
