@@ -33,7 +33,7 @@ net-misc/dropbox
 net-misc/dropbox-cli
 net-misc/nxclient
 net-misc/rdesktop
-net-misc/tightvnc
+net-misc/tigervnc
 net-misc/x2goclient
 net-p2p/qbittorrent
 net-voip/ekiga
