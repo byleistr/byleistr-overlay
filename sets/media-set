@@ -22,7 +22,6 @@ media-libs/hal-flash
 media-plugins/alsa-plugins
 media-sound/alsa-utils
 media-sound/audacity
-media-sound/exaile
 media-sound/mpg123
 media-sound/ogmtools
 media-sound/paprefs
